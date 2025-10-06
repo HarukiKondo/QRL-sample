@@ -1,6 +1,6 @@
 {
   "name": "Node.js 23 Development Environment",
-  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-23",
+  "image": "node:23-bookworm",
 
   "features": {
     "ghcr.io/devcontainers/features/git:1": {
