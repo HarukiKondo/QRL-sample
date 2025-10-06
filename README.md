@@ -57,7 +57,7 @@ Mainnet
 
 ## API
 
-ベースエンドポイントURL
+ベースエンドポイント URL
 
 https://explorer.theqrl.org/api/
 
@@ -97,6 +97,38 @@ curl -XGET https://explorer.theqrl.org/api/status
 curl -XGET https://explorer.theqrl.org/api/miningstats
 ```
 
+その他の API
+
+```bash
+curl -XGET 'https://richlist-api.theqrl.org/richlist?page=0'
+```
+
+ノードの情報を取得する
+
+```bash
+curl -XGET http://127.0.0.1:3000/grpc/mainnet/GetNodeState
+```
+
+## Docker を使った Node の立て方
+
+### インストール
+
+```bash
+# Update && Upgrade Software Packages
+sudo apt update && sudo apt upgrade -y
+
+# Install the required packages for QRL
+sudo apt-get -y install swig3.0 python3-dev python3-pip build-essential pkg-config libssl-dev libffi-dev libhwloc-dev libboost-dev cmake libleveldb-dev
+
+# Install latest setuptools
+pip3 install setuptools==65.7.0
+
+# Install latest service identity package
+pip3 install service-identity==21.1.0
+
+# Install QRL
+pip3 install -U qrl
+```
 
 ## 参考文献
 
