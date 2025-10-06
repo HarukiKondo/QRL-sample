@@ -1,5 +1,6 @@
 # QRL-sample
-QRLについての調査用リポジトリです。
+
+QRL についての調査用リポジトリです。
 
 ## CLI セットアップ手順
 
@@ -15,10 +16,48 @@ USAGE
 ...
 ```
 
+## CLI の使い方
+
+```bash
+qrl-cli status
+```
+
+ネットワークの情報を取得できる
+
+```bash
+Mainnet
+✔ Network status:
+    Network id The sleeper must awaken
+    Network uptime 2658 days
+    Epoch 38415
+    Coins emitted 79173138.69150223
+    Total coin supply 105000000
+    Last block reward 1.404955715
+✔ Node status:
+    Version 4.0.0 python
+    State SYNCED
+    Connections 116
+    Known peers 900
+    Node uptime 142 days
+    Block height 3841594
+```
+
+ウォレットアドレスの情報を取得できる
+
+```bash
+qrl-cli balance Q0105000fb8598ca6567504a7237794922deb861ea5d9987e24f274ddba55974d87015550c356b5
+```
+
+```bash
+Mainnet
+✔ Balance: 0 Quanta
+```
+
 ## 参考文献
+
 - [QRL 公式サイト](https://www.theqrl.org/)
 - [GitHub](https://www.theqrl.org/)
 - [開発者向けドキュメント](https://docs.theqrl.org/)
-- [Web上のWallet](https://wallet.theqrl.org/)
+- [Web 上の Wallet](https://wallet.theqrl.org/)
 - [ブロックエクスプローラー](https://testnet-explorer.theqrl.org/)
-- [GitHub qrllib QRL開発用のライブラリ](https://github.com/theQRL/qrllib)
+- [GitHub qrllib QRL 開発用のライブラリ](https://github.com/theQRL/qrllib)

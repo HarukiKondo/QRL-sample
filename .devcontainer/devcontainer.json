@@ -1,7 +1,7 @@
 {
-  "name": "Node.js 23 & QRL Development Environment",
-  "image": "mcr.microsoft.com/devcontainers/javascript-node:23",
-  
+  "name": "Node.js 23 Development Environment",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-23",
+
   "features": {
     "ghcr.io/devcontainers/features/git:1": {
       "version": "latest"
@@ -32,10 +32,10 @@
     }
   },
 
-  "postCreateCommand": "npm install -g @theqrl/cli && npm --version && node --version && qrl --version",
+  "postCreateCommand": "mkdir -p ~/.npm-global && npm config set prefix '~/.npm-global' && export PATH=~/.npm-global/bin:$PATH && npm install -g @theqrl/cli && echo 'export PATH=~/.npm-global/bin:$PATH' >> ~/.bashrc && npm --version && node --version",
 
   "remoteUser": "node",
-  
+
   "mounts": [
     "source=${localWorkspaceFolder}/.devcontainer/.npmrc,target=/home/node/.npmrc,type=bind,consistency=cached"
   ],
