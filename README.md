@@ -5,3 +5,4 @@ QRLについての調査用リポジトリです。
 - [QRL 公式サイト](https://www.theqrl.org/)
 - [GitHub](https://www.theqrl.org/)
 - [開発者向けドキュメント](https://docs.theqrl.org/)
+- [Web上のWallet](https://wallet.theqrl.org/)
